@@ -5,7 +5,7 @@ import os 						#misc OS features, use to load environment vars
 from dotenv import load_dotenv	#handles .env-a-like files
 from pathlib import Path		#enables file navigation  
 
-loads your API-key from a file 
+#loads your API-key from a file 
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 key=os.getenv("GEOLOC_KEY")
