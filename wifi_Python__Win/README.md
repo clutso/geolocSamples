@@ -27,18 +27,13 @@ We strongly recomment to use Virtual environments to avoid incompatibility issue
 
       `echo GEOLOC_KEY=USE_YOUR_OWN_KEY> .env`
 
-3) Run the main.py file:
-
-      `python main.py`
-
-
-4) :warning: **For some reason, winwifi needs to be runned at least once to properly work** :warning: The following command needs to be runned on every new terminal:
+3) :warning: **For some reason, winwifi needs to be runned at least once to properly work** :warning: The following command needs to be runned on every new terminal:
       
       `wifi scan`
       
-5) run the main.py file:
+4) run the main.py file:
 
       `python main.py`
 
 
-6) Enjoy
+5) Enjoy
