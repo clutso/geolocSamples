@@ -5,12 +5,12 @@ import os 						#misc OS features, use to load environment vars
 from dotenv import load_dotenv	#handles .env-a-like files
 from pathlib import Path		#enables file navigation  
 
-#loads your API-key from a file 
-#env_path = Path('.') / '.envars'
-#load_dotenv(dotenv_path=env_path)
-#key=os.getenv("GEOLOC")
+loads your API-key from a file 
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
+key=os.getenv("GEOLOC_KEY")
 
-url= 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCVlrBFBUlG4Jvf6OgVD_GY6ML-DC_yU7U'
+url= 'https://www.googleapis.com/geolocation/v1/geolocate?key='+key
 headers = {'Content-Type': 'application/json'}
 macAddresses=[]
 #wi-fi scan
